@@ -38,6 +38,11 @@ public int size(){
     return size;
 }
 
+/*Get MAXIELEMENTS */
+public int MAXIELEMENTS(){
+    return MAXIELEMENTS;
+}
+
 /*Output */
 public String toString(){
     String results = "[";
