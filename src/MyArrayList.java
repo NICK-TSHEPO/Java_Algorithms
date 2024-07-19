@@ -43,6 +43,22 @@ public int MAXIELEMENTS(){
     return MAXIELEMENTS;
 }
 
+/*Palindrome method that read the same from the front and back alter the calling list */
+public void makePalindrome()
+{
+    if(this.size() == 0)
+    {
+        return;
+    }
+    int j = size;
+    for(int i = size - 1; i >= 0; i--)
+    {
+        this.add(j, data[i]);
+        j++;
+    }
+
+}
+
 /*Output */
 public String toString(){
     String results = "[";
@@ -55,6 +71,7 @@ public String toString(){
     return results.toString() + "]";
 }
     public static void main(String[] args) throws Exception {
-        //System.out.println("Hello, World!");
+       
+        //System.out.println();
     }
 }
