@@ -58,6 +58,19 @@ public void makePalindrome()
     }
 
 }
+/*Check if the value is exists */
+public boolean contains(Object e)
+{
+    for(int i=0; i < size-1; i++)
+    {
+        if(e.equals(data[i]))
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
 
 /*Output */
 public String toString(){
