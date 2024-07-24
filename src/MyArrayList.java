@@ -71,6 +71,15 @@ public boolean contains(Object e)
     return false;
 }
 
+/*Get the value using the index*/
+public E get(int index)
+{
+    if(index < 0 || index >= size)
+    {
+        throw new IndexOutOfBoundsException("Index: " + index + ", size: " + size);
+    }
+    return data[index];
+}
 
 /*Output */
 public String toString(){
