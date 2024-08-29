@@ -32,6 +32,22 @@ public void add(int index, E e){
         //increase size by 1
         size++;
 }
+public E remove(int index)
+{
+    if(index < 0 || index >= size)
+        throw new IndexOutOfBoundsException("Index: " + index + ", size: " + size);
+    E e = data[index];
+    //Shifting data to the left
+    for(int j = index; j < size-1; j++){
+        data[j] = data[j+1];
+    }
+    data[size-1] = null; //Setting the element to null
+    //Decrementing size
+    size--;
+    return e;
+
+
+}
 
 /*Get size of the array */
 public int size(){
